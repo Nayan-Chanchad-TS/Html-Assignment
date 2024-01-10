@@ -1,9 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+
+  body{
+    height: 100%;
+  }
+
+.login{
+    flex: 1;
+    margin: 10px;
+    height: 100%;
+    
+}
+.login:first-child{
+    margin-right: 20px;
+}
 .hero-image{
-top: 72px;
-left: 166px;
-width: 576px;
-height: 576px;
-background: transparent 0% 0% no-repeat padding-box;
+width: 550px;
+height: 550px;
 box-shadow: 0px 4px 31px #0000000A;
 border: 20px solid #FFFFFF;
+border-radius: 50%;
 }
+
+.inline{
+display: inline-block;
+text-align: right;
+font: normal normal normal 15px/20px Roboto;
+letter-spacing: 0px;
+color: #ADADAD;
+}
+
+.logo{
+    height: 58px;
+}
+
+.register{
+text-align: left;
+font: normal normal normal 15px/20px Roboto;
+letter-spacing: 0px;
+color: #ADADAD;
+}
+
+form>.btn{
+background: #C8242F 0% 0% no-repeat padding-box;
+border-radius: 23px;
+width: 100px;
+}
+
+form>p>span{
+text-align: left;
+font: normal normal normal 15px/20px Roboto;
+letter-spacing: 0px;
+color: #C8242F;
+}
+#username{
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #ADADAD;
+margin: 15px 0;
+border-radius: 5px;
+}
+
+#password{
+margin: 15px 0;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #ADADAD;
+border-radius: 5px;
+}
+
+p.heading{
+    text-align: left;
+    font: normal normal 300 40px/47px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+}
+p>span{
+font: normal normal 900 40px/53px Roboto;
+letter-spacing: 0px;
+color: #C8242F;
+}
+p{
+text-align: left;
+font: normal normal normal 25px/33px Roboto;
+letter-spacing: 0px;
+color: #3E3E3E;
+}
+.main{
+    justify-content: center;
+    margin: 0px;
+    background-color: #0000000A;
+    display: flex;
+    width: 100vh;
+}
+
+/* .center {
+    margin: auto;
+    top: 50%;
+  } */
