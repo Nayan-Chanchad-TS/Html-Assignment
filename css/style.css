@@ -41,14 +41,10 @@ color: #ADADAD;
 margin-top: 23px;
 }
 
-form>.btn{
-background: #C8242F 0% 0% no-repeat padding-box;
-
-}
-
 #btn-params{
     border-radius: 23px;
     width: 120px;
+    background: #C8242F 0% 0% no-repeat padding-box;
 }
 
 form>p>span{
