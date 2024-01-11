@@ -92,10 +92,7 @@ color: #3E3E3E;
     margin: 0px;
     background-color: #0000000A;
     display: flex;
-    width: 100vh;
+    width: 100%;
+    height: 100vh;
 }
 
-/* .center {
-    margin: auto;
-    top: 50%;
-  } */
