@@ -8,12 +8,6 @@
     height: 100%;
   }
 
-.login{
-    flex: 1;
-    margin: 10px;
-    height: 100%;
-    
-}
 .login:first-child{
     margin-right: 20px;
 }
@@ -31,10 +25,12 @@ text-align: right;
 font: normal normal normal 15px/20px Roboto;
 letter-spacing: 0px;
 color: #ADADAD;
+margin-top: 15px;
 }
 
 .logo{
     height: 58px;
+    margin-bottom: 20px;
 }
 
 .register{
@@ -42,12 +38,17 @@ text-align: left;
 font: normal normal normal 15px/20px Roboto;
 letter-spacing: 0px;
 color: #ADADAD;
+margin-top: 23px;
 }
 
 form>.btn{
 background: #C8242F 0% 0% no-repeat padding-box;
-border-radius: 23px;
-width: 100px;
+
+}
+
+#btn-params{
+    border-radius: 23px;
+    width: 120px;
 }
 
 form>p>span{
@@ -75,6 +76,7 @@ p.heading{
     font: normal normal 300 40px/47px Roboto;
     letter-spacing: 0px;
     color: #3E3E3E;
+    margin-bottom: 30px;
 }
 p>span{
 font: normal normal 900 40px/53px Roboto;
@@ -88,11 +90,20 @@ letter-spacing: 0px;
 color: #3E3E3E;
 }
 .main{
-    justify-content: center;
     margin: 0px;
     background-color: #0000000A;
-    display: flex;
     width: 100%;
     height: 100vh;
 }
 
+.login:first-child{
+    width: 50%;
+}
+
+.form-control{
+    margin-top: 23px;
+}
+
+#forgotpwd{
+    margin-left: 294px;
+}
