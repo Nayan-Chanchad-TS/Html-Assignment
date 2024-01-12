@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9f3bfff27f.js" crossorigin="anonymous"></script>
+    <title>Analysis</title>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="blocks py-2">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+            
+                    <!-- Navbar Toggler for mobile view -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbarNav">
+            
+                        <div class="row w-100 ">
+            
+                            <!-- First set of items - left side -->
+                            <div class="col-lg-6 col-ms-12 col-sm-12 d-flex">
+                                <div class="ms-4">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="/images/menu-bar.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="/images/header-logo.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="ms-5">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="/images/search-icon.svg" alt="" width="30" height="20">
+                                        <span class="fs-6">Search</span>
+                                    </a>
+                                </div>
+                            </div>
+            
+                            <!-- Second set of items - right side -->
+                            <div class="col-lg-6 col-ms-4 d-flex justify-content-end">
+                                <div class="">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="/images/notification-icon.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="ms-4">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="/images/profile.png" alt="">
+                                    </a>
+                                    <span>John Doe</span>
+                                </div>
+                                <div class="ms-3 me-3 mt-1">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="/images/downward-arrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="blocks col-2 ps-4" id="sidebar">
+                <section>
+                    <nav
+                    id="sidebarMenu"
+                    class="collapse d-lg-block sidebar collapse bg-white"
+                    >
+                        <div class="position-sticky">
+                            <div class="list-group-flush mx-5 mt-4">
+                                <a
+                                    href="#"
+                                    class="list-group-item list-group-item-action py-3 "
+                                    aria-current="true"
+                                    >
+                                <img src="/images/dashboard-default.svg" alt="" class="me-3" height="20px" width="20px"><span>Dashboard</span>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="list-group-item list-group-item-action py-3  "
+                                    >
+                                    <img src="/images/graph-default.svg" alt="" class="me-3" height="20px" width="20px">
+                                    <span>Analysis</span>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="list-group-item list-group-item-action py-3 "
+                                    ><img src="/images/inbox-default.svg" alt="" class="me-3" height="20px" width="20px"><span>Inbox</span></a
+                                >
+                                <a
+                                    href="#"
+                                    class="list-group-item list-group-item-action py-3 "
+                                    ><img src="/images/clock-default.svg" alt="" class="me-3" height="20px" width="20px"><span>History</span></a
+                                >
+                                <a
+                                    href="#"
+                                    class="list-group-item list-group-item-action py-3 "
+                                    >
+                                    <img src="/images/user-default.svg" alt="" class="me-3" height="20px" width="20px"><span>Users</span>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="list-group-item list-group-item-action py-3 "
+                                    ><img src="/images/maintenance-default.svg" alt="" class="me-3" height="20px" width="20px"><span>Maintenance</span></a
+                                >
+                                <a
+                                    href="#"
+                                    class="list-group-item list-group-item-action py-3 "
+                                    ><img src="/images/setting-default.svg" alt="" class="me-3" height="20px" width="20px"><span>Setting</span></a
+                                >
+                            </div>
+                        </div>
+                    </nav>
+                </section>
+            </div>
+            <div class="blocks col-10 ps-3 ">
+                <aside>
+                    <div class="primary">
+                        <div class=" ">
+                            <h3 class="dash-margin">Analysis</h3>
+                        </div>
+                        <div class="main_form_margin">
+                        <form>
+                            <div class="stage">
+                                
+                                <h4 class="pt-4">One Column</h4>
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                              <select class="form-control" id="exampleFormControlSelect1" >
+                                <option hidden>Dropdown</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Multiple line"></textarea>
+                            </div>
+
+                            <h4 class="pt-4">Two Column</h4>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Username" value="Nayan Chanchad">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                  <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <select class="form-control" id="exampleFormControlSelect1" >
+                                      <option hidden>Dropdown</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                            </div>
+
+                            <h4 class="pt-4">Three Column</h4>
+                            <div class="row">
+                                <div class="form-group col-md-4">
+                                  <input type="text" class="form-control" id="focusedInput"  autofocus="autofocus" placeholder="Focus">
+                                </div>
+                                <div class="form-group col-md-4">
+                                  <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Nayan Chanchad" disabled>
+                                </div>
+                            </div>
+
+                            <h4 class="pt-4">Four Column</h4>
+                            <div class="row">
+                                <div class="form-group col-md-3">
+                                  <input type="text" class="form-control is-invalid" id="exampleFormControlInput1" placeholder="Designation">
+                                  <div class="invalid-feedback">
+                                    Enter valid data.
+                                  </div>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" aria-describedby="nameBlockHelp">
+                                    <small id="nameBlockHelp" class="form-text text-muted">
+                                        Enter your Full name as per ID.
+                                    </small>
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Username" value="Nayan Chanchad">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <select class="form-control" id="exampleFormControlSelect1" >
+                                      <option hidden>Select</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                            </div>
+                            
+                            <h4 class="pt-4">Other Design Elements</h4>
+                            <h5 class="pt-3">File Upload</h5>
+                            <div class="form-group uploadButton">
+                                <input type="file" id="upload" aria-describedby="buttonBlockHelp" hidden/>
+                               
+                                <label for="upload">
+                                    <span> <img src="/images/cloud-upload-icon.svg" alt="">
+                                    </span>
+                                Upload
+                                </label>
+                                <small id="buttonBlockHelp" class="text-muted">
+                                    No Item selected.
+                                </small>
+                            </div>
+
+                            <h5 class="pt-3">Radio Button</h5>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input radioColor" type="radio" name="inlineRadioOptions" id="specifyColor" value="option1" >
+                                <label class="form-check-label" for="specifyColor">Option 1</label>
+                              </div>
+                              <div class="form-check form-check-inline ">
+                                <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked>
+                                <label class="form-check-label" for="inlineRadio2">Option 2</label>
+                              </div>
+
+                            <h5 class="pt-3">Checkbox</h5>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Option 1</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input " type="checkbox" id="inlineCheckbox2" value="option2" checked>
+                                <label class="form-check-label " for="inlineCheckbox2">option 2</label>
+                              </div>
+
+                            <h5 class="pt-3">Snackbar</h5>
+                            <div class="row">
+                                <div class="form-group col-md-6 mb-3">
+                                    <div class="text-danger border border-danger py-2 px-2" role="alert">
+                                    <span>
+                                    <img src="/images/error-icon.svg" alt="" height="30px" width="30px">
+                                    </span>
+                                        This ia a warning message!
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <div class="text-info border border-info py-2 px-2" role="alert">
+                                        <span>
+                                            <img src="/images/info-icon.svg" alt="" height="30px" width="30px">
+                                            </span>
+                                        This is a success message!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <div class=" text-warning border border-warning py-2 px-2" role="alert">
+                                    <span>
+                                    <img src="/images/warning-icon.svg" alt="" height="30px" width="30px">
+                                    </span>
+                                        This ia a warning message!
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <div class="text-success border border-success py-2 px-2" role="alert">
+                                        <span>
+                                            <img src="/images/success-icon.svg" alt="" height="30px" width="30px">
+                                            </span>
+                                        This is a success message!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="pt-3">Call to action</h5>
+                            <button type="button" class="btn btn-outline-danger" >Primary</button>
+                            <button type="button" class="btn btn-outline-danger">Secondary</button>
+
+                            <h5 class="pt-3">Tabs</h5>
+                            <ul class="nav nav-tabs " role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <a class="nav-link active text-black tabDecoration" id="simple-tab-0" data-bs-toggle="tab" href="#simple-tabpanel-0" role="tab" aria-controls="simple-tabpanel-0" aria-selected="true">Tab 1</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <a class="nav-link text-black tabDecoration" id="simple-tab-1" data-bs-toggle="tab" href="#simple-tabpanel-1" role="tab" aria-controls="simple-tabpanel-1" aria-selected="false">Tab 2</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <a class="nav-link text-black tabDecoration" id="simple-tab-2" data-bs-toggle="tab" href="#simple-tabpanel-2" role="tab" aria-controls="simple-tabpanel-2" aria-selected="false">Tab 3</a>
+                                </li>
+                            </ul>
+                              <div class="tab-content pt-5" id="tab-content">
+                                <div class="tab-pane active" id="simple-tabpanel-0" role="tabpanel" aria-labelledby="simple-tab-0">Tab 1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sed maiores repudiandae. Iure vitae labore laudantium corrupti earum aliquid, assumenda eius culpa. Doloribus architecto et distinctio quasi tenetur consequatur veniam tempora cum doloremque, aliquam libero eius mollitia nemo fugiat sapiente?</div>
+                                <div class="tab-pane" id="simple-tabpanel-1" role="tabpanel" aria-labelledby="simple-tab-1">Tab 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos necessitatibus, cupiditate vel temporibus maxime deserunt minus quis, quae debitis minima laboriosam! Illo eligendi itaque tempora vel dolorem nihil error quo, aliquam aperiam dolorum, perferendis animi laudantium iusto maiores consequuntur quidem.</div>
+                                <div class="tab-pane" id="simple-tabpanel-2" role="tabpanel" aria-labelledby="simple-tab-2">Tab 3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui tempora aperiam, saepe quo blanditiis quis accusantium perferendis a assumenda deleniti rem, modi excepturi iusto vitae dolorum non fugiat cum error dignissimos dolores. Porro, dolor ut? Enim illum dolores eum quisquam?</div>
+                              </div>
+                            
+
+                            </div>
+                          </form>
+                        </div>
+                    </div>
+                </aside> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
