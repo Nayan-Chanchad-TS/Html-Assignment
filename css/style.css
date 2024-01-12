@@ -127,22 +127,28 @@ section>a:hover{
     margin: 5px;
 }
 .stage{
-    margin: 35px;
-
+    margin: 45px;
 }
 #innertext{
-    margin-top: 20px;
+    padding-top: 20px;
+    border-width: 20px;
+    padding-left:40px;
+    
 }
 #innermargin{
-    margin-left: 480px;
-    color: black;
+    margin-left: 500px;
 }
 #innermargin>a:hover{
     color: #C8242F;
 }
+#innermargin>a:focus{
+    color: #C8242F;
+    text-decoration: underline;
+    font-size: large;
+}
 .dot {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     background-color: orangered;
     border-radius: 50%;
     display: inline-block;
@@ -154,4 +160,16 @@ section>a:hover{
 }
 .dash-margin{
     padding-top: 30px;
+    margin-left: 35px;
 }
+#border_width{
+    border-width: 30px;
+}
+.black_color{
+    color: black;
+}
+.rectangle {
+    /* height: 50px;
+    width: 100px; */
+    border-radius: 10px;
+  }

@@ -12,8 +12,8 @@
 </head>
 <body>
     <div class="dashboard">
-        <div class="blocks">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="blocks py-2">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
 
                     <div class="d-flex">
@@ -22,12 +22,12 @@
                             <img src="/images/menu-bar.svg" alt="" >
                             </a>
                         </div>
-                        <div class="">
+                        <div class="ms-3">
                             <a class="navbar-brand" href="#">
                             <img src="/images/header-logo.svg" alt="" >
                             </a>
                         </div>
-                        <div class="ms-5">
+                        <div class="ms-4 ps-5">
                             <a class="navbar-brand" href="#">
                             <img src="/images/search-icon.svg" alt="" width="30" height="20">
                             <span class="fs-6">Search</span>
@@ -58,7 +58,7 @@
               </nav>
         </div>
         <div class="row">
-            <div class="blocks col-2 " id="sidebar">
+            <div class="blocks col-2 ps-4" id="sidebar">
                 <section>
                     <nav
                     id="sidebarMenu"
@@ -66,7 +66,6 @@
                     >
                         <div class="position-sticky">
                             <div class="list-group-flush mx-5 mt-4">
-                                
                                 <a
                                     href="#"
                                     class="list-group-item list-group-item-action py-3 "
@@ -112,45 +111,45 @@
                     </nav>
                 </section>
             </div>
-            <div class="blocks col-10 ps-5 ">
+            <div class="blocks col-10 ps-3 ">
                 <aside>
                     <div class="primary">
-                        <div class="stage mt-5">
+                        <div class=" ">
                             <h3 class="dash-margin">Dashboard</h3>
                         </div>
                         <div class="stage">
                             <div class="row" id="data-blocks">
-                                <div class="col d-flex indcard" >
+                                <div class="col d-flex border border-5 border-light " >
                                     <div class="mt-4 "><img src="/images/star.svg" alt=""></div>
                                     <div class="inline ms-3 ">
                                         <p class="fs-5 text-center">23,456<p>
                                         <p class="fs-6 " >New Products</p>
                                     </div>
                                 </div>
-                                <div class="col d-flex ">
-                                    <div class="mt-4 "><img src="/images/dollar-filled.svg" alt=""></div>
+                                <div class="col d-flex border border-5 border-light">
+                                    <div class="mt-4 "><img src="/images/new-product.svg" alt=""></div>
                                     <div class="inline ms-3">
                                         <p class="fs-5 text-center">2345<p>
                                         <p class="fs-6 " >Added Products</p>
                                     </div>
                                 </div>
-                                <div class="col d-flex ">
-                                    <div class="mt-4 "><img src="/images/new-product.svg" alt=""></div>
+                                <div class="col d-flex border border-5 border-light">
+                                    <div class="mt-4 "><img src="/images/total-product.svg" alt="" height="45px" width="45px"></div>
                                     <div class="inline ms-3">
                                         <p class="fs-5 text-center">32,456<p>
                                         <p class="fs-6 " >Total Products</p>
                                     </div>
                                 </div>
-                                <div class="col d-flex ">
+                                <div class="col d-flex border border-5 border-light">
                                     <div class="mt-4 ">
-                                        <img src="/images/star.svg" alt="">
+                                        <img src="/images/dollar-filled.svg" alt="" >
                                     </div>
                                     <div class="inline ms-3">
                                         <p class="fs-5 text-center">5678<p>
                                         <p class="fs-6 " >Today's Sale</p>
                                     </div>
                                 </div>
-                                <div class="col d-flex ">
+                                <div class="col d-flex border border-5 border-light">
                                     <div class="mt-4 "><img src="/images/money-bag.svg" alt=""></div>
                                     <div class="inline ms-3">
                                         <p class="fs-5 text-center">3,33,452<p>
@@ -162,40 +161,44 @@
                         </div>
                         <div class="stage ">
                             <div class="row " id="data-blocks">
-                                <div class="col-sm-8 " id="innertext">
+                                <div class="col-sm-7 border border-5 border-light " id="innertext">
                                     <div class="d-flex">
                                     <h4>Sale</h4>
                                     <ul class="" id="innermargin">
-                                        <a href="#" class="text-decoration-none ">Weekly</a>
-                                        <a href="#" class="text-decoration-none ">Monthly</a>
-                                        <a href="#" class="text-decoration-none ">Yearly</a>
+                                        <a href="#" class="text-decoration-none black_color">Weekly</a>
+                                        <a href="#" class="text-decoration-none black_color">Monthly</a>
+                                        <a href="#" class="text-decoration-none black_color ">Yearly</a>
                                        
                                     </ul>
                                     </div>
                                     <img src="/images/data-graph.png" alt="">
                                 </div>
-                                <div class="col-sm-4 ">
-                                    <h4>Sales by Country</h4>
+                                <div class="col-sm-5 border border-5 border-light" id="innertext">
+                                    <h4 class="ps-4">Sales by Country</h4>
+                                    <div class="text-center">
                                     <img src="/images/pie-chart.svg" alt="" >
-                                    <div class="row">
-                                        <div class="col">
-                                            <span class="dot bg-danger"></span>
-                                            <h6>United States of America</h6>
+                                    </div>
+                                    <div class="container">
+                                    <div class="row ms-4">
+                                        <div class="col d-flex ">
+                                            <span class="dot bg-danger mt-2 me-2"></span>
+                                            <p class="fs-6">United States of America</p>
                                         </div>
-                                        <div class="col">
-                                            <span class="dot bg-success"></span>
-                                            <h6>Canada</h6>
+                                        <div class="col d-flex">
+                                            <span class="dot bg-success mt-2 me-2"></span>
+                                            <p class="fs-6">Canada</p>
                                         </div>
                                         <div class="w-100"></div>
-                                        <div class="col">
-                                            <span class="dot"></span>
-                                            <h6>Russia</h6>
+                                        <div class="col d-flex">
+                                            <span class="dot mt-2 me-2"></span>
+                                            <p class="fs-6">Russia</p>
                                         </div>
-                                        <div class="col">
-                                            <span class="dot bg-warning"></span>
-                                            <h6>India</h6>
+                                        <div class="col d-flex">
+                                            <span class="dot bg-warning mt-2 me-2"></span>
+                                            <p class="fs-6">India</p>
                                         </div>
                                       </div>
+                                    </div>
                                 </div>
                               </div>
                         </div>
@@ -208,82 +211,82 @@
                                     <th class="text-black-50" scope="col">COMPANY NAME</th>
                                     <th class="text-black-50" scope="col">EMAIL</th>
                                     <th class="text-black-50" scope="col">DUE DATE</th>
-                                    <th class="text-black-50" scope="col">STATUS</th>
+                                    <th class="text-black-50 text-center" scope="col">STATUS</th>
                                     <th class="text-black-50" scope="col">AMOUNT</th>
                                   </tr>
                                 </thead>
-                                <tbody>
+                                <tbody class="">
                                   <tr>
-                                    <td scope="row">651535</td>
+                                    <td scope="row">632568</td>
                                     <td>Public Adjusting firm</td>
                                     <td>Georjia.young@example.com</td>
                                     <td>24 May, 2023</td>
-                                    <td>Paid</td>
+                                    <td class=" rectangle table-success text-success text-center">Paid</td>
                                     <td>$47,800</td>
                                   </tr>
                                   <tr>
-                                    <td scope="row">651535</td>
-                                    <td>Public Adjusting firm</td>
-                                    <td>Georjia.young@example.com</td>
+                                    <td scope="row">614587</td>
+                                    <td>Other</td>
+                                    <td>Jessica.young@example.com</td>
                                     <td>24 May, 2023</td>
-                                    <td>Paid</td>
-                                    <td>$47,800</td>
+                                    <td class=" rectangle table-success text-success text-center">Paid</td>
+                                    <td>$98,000</td>
                                   </tr>
                                   <tr>
-                                    <td scope="row">651535</td>
-                                    <td>Public Adjusting firm</td>
-                                    <td>Georjia.young@example.com</td>
-                                    <td>24 May, 2023</td>
-                                    <td>Paid</td>
-                                    <td>$47,800</td>
+                                    <td scope="row">654578</td>
+                                    <td>Vendor</td>
+                                    <td>Kulkarni.young@example.com</td>
+                                    <td>8 Sep, 2020</td>
+                                    <td class=" rectangle table-success text-success text-center">Paid</td>
+                                    <td>$20,900</td>
                                   </tr>
                                   <tr>
-                                    <td scope="row">651535</td>
-                                    <td>Public Adjusting firm</td>
-                                    <td>Georjia.young@example.com</td>
-                                    <td>24 May, 2023</td>
-                                    <td>Paid</td>
-                                    <td>$47,800</td>
+                                    <td scope="row">584796</td>
+                                    <td>Project Management Company</td>
+                                    <td>Locky.young@example.com</td>
+                                    <td>2 Feb, 2020</td>
+                                    <td class=" rectangle table-danger text-danger text-center">Failed</td>
+                                    <td>$10,200</td>
                                   </tr>
                                   <tr>
-                                    <td scope="row">651535</td>
-                                    <td>Public Adjusting firm</td>
-                                    <td>Georjia.young@example.com</td>
-                                    <td>24 May, 2023</td>
-                                    <td>Paid</td>
-                                    <td>$47,800</td>
+                                    <td scope="row">631535</td>
+                                    <td>Subcontractor Company</td>
+                                    <td>Ferguson.young@example.com</td>
+                                    <td>22 Oct, 2023</td>
+                                    <td class=" rectangle table-secondary text-secondary text-center">Pending</td>
+                                    <td>$12,600</td>
                                   </tr>
                                   <tr>
-                                    <td scope="row">651535</td>
-                                    <td>Public Adjusting firm</td>
-                                    <td>Georjia.young@example.com</td>
-                                    <td>24 May, 2023</td>
-                                    <td>Paid</td>
-                                    <td>$47,800</td>
+                                    <td scope="row">657535</td>
+                                    <td>TPA</td>
+                                    <td>Joseph.young@example.com</td>
+                                    <td>21 Sep, 2021</td>
+                                    <td class=" rectangle table-success text-success text-center">Paid</td>
+                                    <td>$28,800</td>
                                   </tr>
                                   <tr>
-                                    <td scope="row">651535</td>
-                                    <td>Public Adjusting firm</td>
-                                    <td>Georjia.young@example.com</td>
-                                    <td>24 May, 2023</td>
-                                    <td>Paid</td>
-                                    <td>$47,800</td>
+                                    <td scope="row">651985</td>
+                                    <td>Mortgage Company</td>
+                                    <td>Jackson.young@example.com</td>
+                                    <td>17 Oct, 2020</td>
+                                    <td class=" rectangle table-danger text-danger text-center">Failed</td>
+                                    <td>$11,170</td>
                                   </tr>
                                   <tr>
-                                    <td scope="row">651535</td>
-                                    <td>Public Adjusting firm</td>
-                                    <td>Georjia.young@example.com</td>
-                                    <td>24 May, 2023</td>
-                                    <td>Paid</td>
-                                    <td>$47,800</td>
+                                    <td scope="row">652535</td>
+                                    <td>Fire Department</td>
+                                    <td>Alice.young@example.com</td>
+                                    <td>27 May, 2023</td>
+                                    <td class=" rectangle table-secondary text-secondary text-center">Pending</td>
+                                    <td>$49,800</td>
                                   </tr>
                                   <tr>
-                                    <td scope="row">651535</td>
-                                    <td>Public Adjusting firm</td>
-                                    <td>Georjia.young@example.com</td>
-                                    <td>24 May, 2023</td>
-                                    <td>Paid</td>
-                                    <td>$47,800</td>
+                                    <td scope="row">651545</td>
+                                    <td>Insurance CArrier</td>
+                                    <td>Bob.young@example.com</td>
+                                    <td>21 Aug, 2020</td>
+                                    <td class=" rectangle table-success text-success text-center">Paid</td>
+                                    <td>$40,000</td>
                                   </tr>
                                 </tbody>
                               </table>
