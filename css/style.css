@@ -8,9 +8,9 @@
     height: 100%;
   }
 
-.login:first-child{
+/* .login:first-child{
     margin-right: 20px;
-}
+} */
 .hero-image{
 width: 550px;
 height: 550px;
@@ -90,19 +90,23 @@ color: #3E3E3E;
     background-color: #0000000A;
     width: 100%;
     height: 100vh;
+    padding-top: 150px;
 }
 
-.login:first-child{
+/* .login:first-child{
     width: 50%;
-}
+} */
 
 .form-control{
     margin-top: 23px;
 }
 
 #forgotpwd{
-    margin-left: 294px;
+    margin-left: 214px;
 }
+
+
+/* dashBoard */ 
 
 #sidebarMenu{
     width: 242px;
@@ -204,13 +208,43 @@ ul>li>a:hover{
 
 
 @media screen and (max-width:990px) {
-    .headerLogo{
+    .hero-image{
         display: none;
+    }
+    .login{
+        padding-left: 50px;
+    }
+    
+    .main{
+        padding-top: 40px;
+    }
+    .headerLogo{
+        margin: 0 auto;
+    }
+    .searchLogo {
+        display: none;
+    }
+    .profileRow {
+        display: none;
+    }
+}
+@media screen and (min-width:650px) and (max-width: 790px){
+    .login{
+        padding-left: 150px;
+    }
+}
+@media screen and (min-width:791px) and (max-width: 990px){
+    .login{
+        padding-left: 200px;
     }
 }
 @media screen and (max-width:576px) {
     #profile{
         display: none;
+    }
+    #forgotpwd{
+        display: inline;
+        margin-left: 15px;
     }
 }
 .font_size{
