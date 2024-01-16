@@ -12,8 +12,8 @@
     margin-right: 20px;
 } */
 .hero-image{
-width: 550px;
-height: 550px;
+width: 50%px;
+height: 50%px;
 box-shadow: 0px 4px 31px #0000000A;
 border: 20px solid #FFFFFF;
 border-radius: 50%;
@@ -101,9 +101,9 @@ color: #3E3E3E;
     margin-top: 23px;
 }
 
-#forgotpwd{
+/* #forgotpwd{
     margin-left: 214px;
-}
+} */
 
 
 /* dashBoard */ 
@@ -112,8 +112,11 @@ color: #3E3E3E;
     width: 242px;
 }
 
-section>a:hover{
-    background-color: #eb2435;
+.redHover>a:hover{
+    background: #FFF3F4 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    padding-left: 10px;
+    color: red;
 }
 .card-margin{
     margin-bottom: 0px;
@@ -141,16 +144,19 @@ section>a:hover{
     
 }
 /* #innermargin{
-    margin-left: 500px;
+    text-decoration: none;
 } */
 #innermargin>a:hover{
     color: #C8242F;
-}
-#innermargin>a:focus{
-    color: #C8242F;
     text-decoration: underline;
-    font-size: large;
 }
+#navTab>li>a{
+    color: #1b0708;
+}
+#navTab>li>a:focus{
+    color: #C8242F;
+}
+
 .dot {
     height: 20px;
     width: 20px;
@@ -172,10 +178,12 @@ section>a:hover{
 .black_color{
     color: black;
 }
-.rectangle {
-    /* height: 50px;
-    width: 100px; */
-    border-radius: 10px;
+.rectAngle {
+    /* height: 20px; */
+    /* width: 100px; */
+    /* border-radius: 10px; */
+    background-color: #EBFFEF;
+    color: #3CDD5F;
 }
 .main_form_margin{
     background-color:#FFFFFF;
@@ -195,6 +203,9 @@ section>a:hover{
 .radioColor:checked{
     background-color: red;
 }
+input[type=radio]#radioColor { 
+    accent-color: #FF0000; 
+} 
 .snackBar{
     background-color: #FFFFFF;
     color: red;
@@ -206,12 +217,14 @@ ul>li>a:hover{
     text-decoration: underline;
 }
 
-
-@media screen and (max-width:990px) {
+@media screen and (max-width:720px){
     .hero-image{
         display: none;
     }
-    .login{
+}
+@media screen and (max-width:990px) {
+    
+    .loginMargin{
         padding-left: 50px;
     }
     
@@ -221,30 +234,60 @@ ul>li>a:hover{
     .headerLogo{
         margin: 0 auto;
     }
-    .searchLogo {
-        display: none;
-    }
-    .profileRow {
-        display: none;
-    }
+    
 }
 @media screen and (min-width:650px) and (max-width: 790px){
-    .login{
+    .loginMargin{
         padding-left: 150px;
     }
+    .hero-image{
+        width: 50%;
+    }
 }
+/* @media screen and (min-width:576px) and (max-width: 990px){
+    .headerLogo{
+        padding-left: 300px;
+    }
+} */
 @media screen and (min-width:791px) and (max-width: 990px){
-    .login{
+    .loginMargin{
         padding-left: 200px;
+    }
+    .hero-image{
+        width: 50%;
+    }
+}
+@media screen and (min-width:576px) and (max-width: 700px){
+    .searchLogo {
+        display: none;
     }
 }
 @media screen and (max-width:576px) {
     #profile{
         display: none;
     }
-    #forgotpwd{
+    .searchLogo {
+        display: none;
+    }
+    .profileRow {
+        display: none;
+    }
+    /* #forgotpwd{
         display: inline;
         margin-left: 15px;
+    } */
+}
+@media screen and (min-width:768px){
+    .proileRight{
+        justify-content: end;
+    }
+}
+@media screen and (max-width:768px){
+    .proileRight{
+        justify-content: center;
+    }
+    .profileLeft{
+        justify-content: center;
     }
 }
 .font_size{

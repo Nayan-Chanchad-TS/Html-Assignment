@@ -49,19 +49,19 @@
                             </div>
             
                             <!-- Second set of items - right side -->
-                            <div id="profile" class=" col-0 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-end">
+                            <div id="profile" class=" col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-end">
                                 <div class=" profileRow">
                                     <a class="navbar-brand" href="#">
                                         <img src="/images/notification-icon.svg" alt="">
                                     </a>
                                 </div>
-                                <div class="ms-4 profileRow">
+                                <div class="ms-3 profileRow">
                                     <a class="navbar-brand" href="#">
                                         <img src="/images/profile.png" alt="">
                                     </a>
                                     <span>John Doe</span>
                                 </div>
-                                <div class="ms-3 me-3 mt-1 profileRow">
+                                <div class="ms-2 me-3 mt-1 profileRow">
                                     <a class="navbar-brand" href="#">
                                         <img src="/images/downward-arrow.svg" alt="">
                                     </a>
@@ -83,13 +83,17 @@
                         <div class="position-sticky">
                             
                             <div class="list-group-flush mx-5 mt-4">
+                                <div class="redHover">
                                 <a
                                     href="dashboard.html"
                                     class="list-group-item list-group-item-action py-3 "
                                     aria-current="true"
                                     >
-                                <img src="/images/dashboard-default.svg" alt="" class="me-3" height="20px" width="20px"><span>Dashboard</span>
+                                <img src="/images/dashboard-default.svg" alt="" class="me-3" height="20px" width="20px">
+                                <span>Dashboard</span>
                                 </a>
+                                </div>
+                                <div class="redHover">
                                 <a
                                     href="/innerpage.html"
                                     class="list-group-item list-group-item-action py-3  "
@@ -97,6 +101,7 @@
                                     <img src="/images/graph-default.svg" alt="" class="me-3" height="20px" width="20px">
                                     <span>Analysis</span>
                                 </a>
+                                </div>
                                 <a
                                     href="#"
                                     class="list-group-item list-group-item-action py-3 "
@@ -135,7 +140,7 @@
                             <h3 class="dash-margin">Dashboard</h3>
                         </div>
 
-                        <div class="stage container">
+                        <div class="stage ">
                             <div class="row " id="data-blocks">
                                 <div class="col  d-flex border border-5 border-light justify-content-center " >
                                     <div class="mt-4 "><img src="/images/star.svg" alt=""></div>
@@ -180,7 +185,7 @@
                         <div class="stage ">
                             <div class="row " id="data-blocks">
                                 <div class="col-sm-7 border border-5 border-light " id="innertext">
-                                    <div class="d-flex">
+                                    <div class="d-flex mb-4">
                                     <h4>Sale</h4>
                                     <ul class="m-auto me-0" id="innermargin">
                                         <a href="#" class="text-decoration-none black_color">Weekly</a>
@@ -199,8 +204,8 @@
                                     <div class="container">
                                     <div class="row ms-2">
                                         <div class="col d-flex ">
-                                            <span class="dot bg-danger mt-2 me-2 text-center"></span>
-                                            <p class="font_size">United States of America</p>
+                                            <span class=" dot bg-danger mt-2 me-2"></span>
+                                            <p class="font_size">USA</p>
                                         </div>
                                         <div class="col d-flex">
                                             <span class="dot bg-success mt-2 me-2"></span>
@@ -223,7 +228,7 @@
                         <div class="stage " >
                             <div class="d-flex" id="data-blocks">
                             <h4  class="py-3 px-2 ">Invoices </h4>
-                            <p class="m-auto me-2 view-margin">View All</p>
+                            <p class="m-auto me-4 view-margin">View All</p>
                             </div>
                             <div class="table-responsive">
                                 <table class="table " >
@@ -243,7 +248,7 @@
                                         <td>Public Adjusting firm</td>
                                         <td>Georjia.young@example.com</td>
                                         <td>24 May, 2023</td>
-                                        <td class=" rectangle table-success text-success text-center">Paid</td>
+                                        <td style="color: #3CDD5F;background-color: #EBFFEF;" class=" rectangle  text-center">Paid</td>
                                         <td>$47,800</td>
                                       </tr>
                                       <tr>
@@ -251,7 +256,7 @@
                                         <td>Other</td>
                                         <td>Jessica.young@example.com</td>
                                         <td>24 May, 2023</td>
-                                        <td class=" rectangle table-success text-success text-center">Paid</td>
+                                        <td style="color: #3CDD5F;background-color: #EBFFEF;" class="  text-center">Paid</td>
                                         <td>$98,000</td>
                                       </tr>
                                       <tr>
@@ -259,7 +264,7 @@
                                         <td>Vendor</td>
                                         <td>Kulkarni.young@example.com</td>
                                         <td>8 Sep, 2020</td>
-                                        <td class=" rectangle table-success text-success text-center">Paid</td>
+                                        <td style="color: #3CDD5F;background-color: #EBFFEF;" class=" rectangle text-center">Paid</td>
                                         <td>$20,900</td>
                                       </tr>
                                       <tr>
@@ -267,7 +272,7 @@
                                         <td>Project Management Company</td>
                                         <td>Locky.young@example.com</td>
                                         <td>2 Feb, 2020</td>
-                                        <td class=" rectangle table-danger text-danger text-center">Failed</td>
+                                        <td style="color: #FF4545;background-color: #FFF5F5;" class=" rectangle text-center">Failed</td>
                                         <td>$10,200</td>
                                       </tr>
                                       <tr>
@@ -275,7 +280,7 @@
                                         <td>Subcontractor Company</td>
                                         <td>Ferguson.young@example.com</td>
                                         <td>22 Oct, 2023</td>
-                                        <td class=" rectangle table-secondary text-secondary text-center">Pending</td>
+                                        <td style="color: #BABABA;background-color: #F8F8F8;" class=" rectangle text-center">Pending</td>
                                         <td>$12,600</td>
                                       </tr>
                                       <tr>
@@ -283,7 +288,7 @@
                                         <td>TPA</td>
                                         <td>Joseph.young@example.com</td>
                                         <td>21 Sep, 2021</td>
-                                        <td class=" rectangle table-success text-success text-center">Paid</td>
+                                        <td style="color: #3CDD5F;background-color: #EBFFEF;" class=" rectangle text-center">Paid</td>
                                         <td>$28,800</td>
                                       </tr>
                                       <tr>
@@ -291,7 +296,7 @@
                                         <td>Mortgage Company</td>
                                         <td>Jackson.young@example.com</td>
                                         <td>17 Oct, 2020</td>
-                                        <td class=" rectangle table-danger text-danger text-center">Failed</td>
+                                        <td style="color: #FF4545;background-color: #FFF5F5;" class=" rectangle text-center">Failed</td>
                                         <td>$11,170</td>
                                       </tr>
                                       <tr>
@@ -299,7 +304,7 @@
                                         <td>Fire Department</td>
                                         <td>Alice.young@example.com</td>
                                         <td>27 May, 2023</td>
-                                        <td class=" rectangle table-secondary text-secondary text-center">Pending</td>
+                                        <td style="color: #BABABA;background-color: #F8F8F8;" class=" rectangle text-center">Pending</td>
                                         <td>$49,800</td>
                                       </tr>
                                       <tr>
@@ -307,7 +312,7 @@
                                         <td>Insurance CArrier</td>
                                         <td>Bob.young@example.com</td>
                                         <td>21 Aug, 2020</td>
-                                        <td class=" rectangle table-success text-success text-center">Paid</td>
+                                        <td style="color: #3CDD5F;background-color: #EBFFEF;" class=" rectangle text-center">Paid</td>
                                         <td>$40,000</td>
                                       </tr>
                                     </tbody>

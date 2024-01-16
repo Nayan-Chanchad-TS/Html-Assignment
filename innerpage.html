@@ -27,7 +27,7 @@
                         <div class="row w-100 ">
             
                             <!-- First set of items - left side -->
-                            <div class="col-lg-6 col-ms-12 col-sm-12 d-flex">
+                            <div class="profileLeft col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex my-3">
                                 <div class="ms-4">
                                     <a class="navbar-brand" href="#">
                                         <img src="/images/menu-bar.svg" alt="">
@@ -47,7 +47,7 @@
                             </div>
             
                             <!-- Second set of items - right side -->
-                            <div class="col-lg-6 col-ms-4 d-flex justify-content-end">
+                            <div class="proileRight col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex my-3">
                                 <div class="">
                                     <a class="navbar-brand" href="#">
                                         <img src="/images/notification-icon.svg" alt="">
@@ -241,7 +241,7 @@
                                 <label class="form-check-label" for="specifyColor">Option 1</label>
                               </div>
                               <div class="form-check form-check-inline ">
-                                <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked>
+                                <input class="form-check-input radioColor" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked>
                                 <label class="form-check-label" for="inlineRadio2">Option 2</label>
                               </div>
 
@@ -262,7 +262,7 @@
                                     <span>
                                     <img src="/images/error-icon.svg" alt="" height="30px" width="30px">
                                     </span>
-                                        This ia a warning message!
+                                        This is a warning message!
                                     </div>
                                 </div>
                                 <div class="form-group col-md-6 mb-3">
@@ -280,7 +280,7 @@
                                     <span>
                                     <img src="/images/warning-icon.svg" alt="" height="30px" width="30px">
                                     </span>
-                                        This ia a warning message!
+                                        This is a warning message!
                                     </div>
                                 </div>
                                 <div class="form-group col-md-6 mb-3">
@@ -294,19 +294,19 @@
                             </div>
 
                             <h5 class="pt-3">Call to action</h5>
-                            <button type="button" class="btn btn-outline-danger mb-3" >Primary</button>
+                            <button type="button" class="btn active btn-outline-danger mb-3" >Primary</button>
                             <button type="button" class="btn btn-outline-danger mb-3">Secondary</button>
 
                             <h5 class="pt-3">Tabs</h5>
-                            <ul class="nav nav-tabs " role="tablist">
+                            <ul class="nav nav-tabs " id="navTab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                  <a class="nav-link active text-black tabDecoration" id="simple-tab-0" data-bs-toggle="tab" href="#simple-tabpanel-0" role="tab" aria-controls="simple-tabpanel-0" aria-selected="true">Tab 1</a>
+                                  <a class="nav-link tabDecoration" id="simple-tab-0" data-bs-toggle="tab" href="#simple-tabpanel-0" role="tab" aria-controls="simple-tabpanel-0" aria-selected="true" selected>Tab 1</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                  <a class="nav-link text-black tabDecoration" id="simple-tab-1" data-bs-toggle="tab" href="#simple-tabpanel-1" role="tab" aria-controls="simple-tabpanel-1" aria-selected="false">Tab 2</a>
+                                  <a class="nav-link  tabDecoration" id="simple-tab-1" data-bs-toggle="tab" href="#simple-tabpanel-1" role="tab" aria-controls="simple-tabpanel-1" aria-selected="false">Tab 2</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                  <a class="nav-link text-black tabDecoration" id="simple-tab-2" data-bs-toggle="tab" href="#simple-tabpanel-2" role="tab" aria-controls="simple-tabpanel-2" aria-selected="false">Tab 3</a>
+                                  <a class="nav-link  tabDecoration" id="simple-tab-2" data-bs-toggle="tab" href="#simple-tabpanel-2" role="tab" aria-controls="simple-tabpanel-2" aria-selected="false">Tab 3</a>
                                 </li>
                             </ul>
                               <div class="tab-content pt-5" id="tab-content">
